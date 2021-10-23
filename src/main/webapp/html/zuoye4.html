@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://cdn.bootcss.com/material-design-icons/3.0.1/iconfont/material-icons.css" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        div.cont{
+            display: flex;
+            width: 100%;
+            justify-content: center;
+        }
+        div.left{
+            min-width: 180px;
+            flex-grow: 1;
+        }
+        div.left>a{
+            width:100%;
+            display:block;
+            padding:10px;
+            text-decoration: none;
+            color: black;
+        }
+        a:hover{
+            background: #039af4;
+        }
+        a span{
+            display: inline-block;
+            vertical-align: top;
+            text-align: left;
+            padding: 0 10px;
+        }
+        a i{
+            display: inline-block;
+            padding: 0 10px;
+        }
+        div.cont>div.main{
+            flex-grow: 2;
+        }
+        @media (max-width: 600px) {
+            div.left{
+                min-width: 80px;
+            }
+            a span{
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="cont">
+    <div class="left">
+        <a href="#"><i class="material-icons">cloud</i><span>cloud</span></a>
+        <a href="#"><i class="material-icons">create</i><span>write</span></a>
+        <a href="#"><i class="material-icons">credit_card</i><span>card</span></a>
+        <a href="#"><i class="material-icons">date_range</i><span>date</span></a>
+        <a href="#"><i class="material-icons">delete</i><span>delete</span></a>
+    </div>
+    <div class="main">
+        <p>asadjshdkashdasdhaslkdjaskld
+            nsakldnaskldnklasdnkaslndka
+            sldnkalndkladnlakndlkandlak
+            ndklasndalksndakl</p>
+    </div>
+</div>
+</body>
+</html>

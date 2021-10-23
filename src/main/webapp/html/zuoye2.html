@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    div.container{
+      display: flex;
+      flex-direction: row;
+    }
+    div.container>div.card{
+      width: 30%;
+      flex-grow: 1;
+      padding: 5px;
+      margin: 5px;
+      text-align: center;
+    }
+    div.header>img{
+      width: 100%;
+      border-radius: 100%;
+      opacity: 0.5;
+      object-fit: contain;
+      transition: opacity 2s;
+    }
+    div.content{
+      text-align: justify;
+    }
+    a{
+      background-color: #ff4436;
+      display: inline-block;
+      padding: 5px 10px;
+      text-decoration: none;
+      border-radius: 5px;
+      color: white;
+    }
+    a:hover{
+      background-color: red;
+    }
+    div.card:hover{
+      box-shadow: 0 4px 8px 0;
+
+    }
+    div.card:hover img{
+      opacity: 1.0;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="card">
+    <div class="header">
+      <img src="https://picsum.photos/250?random=1" alt="face">
+    </div>
+    <div class="content">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dicta ex laudantium ratione sint.
+        Aperiam dignissimos enim eos ex laudantium maxime neque nobis nulla odio rem soluta totam, unde
+        voluptatem voluptates, voluptatum!</p>
+      <a href="">Read More</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="header">
+      <img src="https://picsum.photos/250?random=2" alt="face">
+    </div>
+    <div class="content">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dicta ex laudantium ratione sint.
+        Aperiam dignissimos enim eos ex laudantium maxime neque nobis nulla odio rem soluta totam, unde
+        voluptatem voluptates, voluptatum!</p>
+      <a href="">Read More</a>
+    </div>
+  </div>
+  <div class="card">
+    <div class="header">
+      <img src="https://picsum.photos/250?random=3" alt="face">
+    </div>
+    <div class="content">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dicta ex laudantium ratione sint.
+        Aperiam dignissimos enim eos ex laudantium maxime neque nobis nulla odio rem soluta totam, unde
+        voluptatem voluptates, voluptatum!</p>
+      <a href="">Read More</a>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

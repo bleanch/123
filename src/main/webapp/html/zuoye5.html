@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://cdn.bootcss.com/material-design-icons/3.0.1/iconfont/material-icons.css" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        div.feb{
+            position: fixed;
+            width: 120px;
+            right:0;
+            top:0;
+            text-align: center;
+        }
+        .feb-btn .material-icons{
+            transition: transform 1s;
+        }
+        .feb-btn .material-icons:hover{
+            transform: rotate(180deg);
+        }
+        .feb-menu{
+            display: none;
+        }
+        ul{
+            list-style: none;
+        }
+        .material-icons{
+            font-size: 50px;
+            color:blue;
+        }
+        .red{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<div class="feb">
+    <div class="feb-btn">
+        <a href="#"><i id="help" class="material-icons">help</i></a>
+    </div>
+    <div class="feb-menu">
+        <ul>
+            <li><a href="#"><i class="material-icons">local_phone</i></a></li>
+            <li><a href="#"><i class="material-icons">mail</i></a></li>
+            <li><a href="#"><i class="material-icons red">mic</i></a></li>
+        </ul>
+    </div>
+</div>
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $(function (){
+        $(".feb-btn").on({
+            mouseenter: function (){
+                $("#help").text("adb");
+                $(".feb-menu").fadeIn(1000);
+            },
+            mouseleave:function () {
+                $("#help").text("help");
+                $(".feb-menu").fadeOut(1000);
+            }
+        })
+    })
+</script>
+</body>
+</html>
